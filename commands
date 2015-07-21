@@ -61,8 +61,7 @@ do_bash() {
 }
 
 db_url() {
-  echo "redis://${private_ip}:${port}"
-  echo "redis://0.0.0.0:6378"
+  echo "redis://${private_ip}:6379"
 }
 
 migrate() {
