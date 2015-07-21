@@ -81,7 +81,7 @@ env_for() {
   _url=$(db_url)
 
   if [[ -n "$_url" ]]; then
-    echo "-e REDIS_URL=$_url -e REDIS_HOST=$private_ip -e REDIS_PORT=$port"
+    echo "-e REDIS_URL=$_url -e REDIS_HOST=$private_ip -e REDIS_PORT=6379"
   fi
 }
 
